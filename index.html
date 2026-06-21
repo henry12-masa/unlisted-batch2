@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>未掲載資格クイズ 第2弾｜20資格×50問</title>
+  <meta name="description" content="食品・調理・生活相談系の未掲載資格20種類を1つにまとめたクイズサイト。1資格50問、ランダム50問出題、ホームボタン、進捗バー付き。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header"><h1>未掲載資格クイズ 第2弾</h1><p>20資格×50問。資格を選んでランダム50問に挑戦できます。</p></header>
+  <div class="layout">
+    <aside class="ad-box" aria-label="広告枠 左"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8398161859137802" crossorigin="anonymous"></script>
+      <!-- チェス -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8398161859137802"
+           data-ad-slot="5599163841"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></aside>
+    <main class="app">
+      <nav class="top-nav"><button id="homeBtnTop" type="button" class="home-btn">🏠 ホームに戻る</button></nav>
+      <section id="menu" class="card">
+        <h2>資格を選択</h2><p class="lead">ジャンルを選ぶと資格ボタンが表示されます。</p>
+        <div class="actions"><button id="mixBtn" type="button" class="primary">全資格ミックスで開始</button></div>
+        <h3>ジャンル</h3><div id="categoryButtons" class="button-grid"></div>
+        <h3>資格</h3><div id="examButtons" class="button-grid muted-box"><p class="empty">先にジャンルを選択してください。</p></div>
+      </section>
+      <section id="quiz" class="card hidden">
+        <div class="status"><span id="progress">0/0</span><span id="score">正解 0</span></div>
+        <div class="progress-wrap"><div id="progressBar" class="progress-bar"></div></div>
+        <p id="examTitle" class="exam-title"></p><h2 id="question">問題文</h2><div id="choices" class="choices"></div><div id="result" class="result"></div>
+        <div class="quiz-actions"><button id="homeBtnQuiz" type="button" class="home-btn">🏠 ホームに戻る</button></div>
+      </section>
+      <section id="finish" class="card hidden"><h2>結果</h2><p id="finalScore" class="final-score"></p><div class="finish-actions"><button id="retryBtn" type="button" class="primary">もう一度挑戦する</button><button id="homeBtnFinish" type="button" class="home-btn">🏠 ホームに戻る</button></div></section>
+    </main>
+    <aside class="ad-box" aria-label="広告枠 右"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8398161859137802" crossorigin="anonymous"></script>
+      <!-- チェス -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-8398161859137802"
+           data-ad-slot="5599163841"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script></aside>
+  </div>
+  <script src="questions.js"></script><script src="script.js"></script>
+</body>
+</html>
